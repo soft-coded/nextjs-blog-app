@@ -1,16 +1,41 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;600;700&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  --color-orange: #FFA500;
+  --color-purple: #FF00FF;
+  --color-background-1: #292326;
+  --color-background-2: #27161e;
+  --color-background-pink: rgba(182, 0, 136, 0.384);
+  --color-text-1: #e9e9e9;
+  --color-text-2: #bdbdbd;
+  --color-text-3: #838383;
+  --color-text-dark: #441717;
+  --color-shadow-pink: rgba(238, 6, 226, 0.767);
+}
+
+body {
+  background: linear-gradient(90deg, var(--color-background-1), var(--color-background-2));
+  color: var(--color-text-1);
+  /* font-family: 'Averia Serif Libre', cursive; */
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.section-header {
+  position: relative;
+  background: linear-gradient(90deg, var(--color-orange), var(--color-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lora";
+  font-size: 2rem;
+  display: inline-block;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
 }

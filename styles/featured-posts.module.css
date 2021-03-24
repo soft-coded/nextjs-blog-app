@@ -1,0 +1,53 @@
+.featured {
+  margin-bottom: 100px;
+}
+
+.featured a {
+  text-decoration: none;
+  color: var(--color-text-1)
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 30px;
+}
+
+.list-item {
+  background: var(--color-background-pink);
+  border-radius: 7px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-item:hover{
+  transform: scale(1.05, 1.05);
+}
+
+.list-item .image {
+  margin-bottom: 20px;
+}
+
+.list-item .image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.list-item h3{
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+.list-item time {
+  display: inline-block;
+  margin: 20px 0;
+  color: var(--color-text-2);
+  font-style: italic;
+}
+
+.list-item p {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}

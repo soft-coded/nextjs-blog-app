@@ -1,0 +1,65 @@
+.section {
+  margin: 120px 0;
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+.form {
+  background: var(--color-background-pink);
+  padding: 30px;
+}
+
+.control {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.control label{
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.control input, .control textarea {
+  width: 100%;
+  background-color: rgb(138, 2, 138);
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  resize: none;
+  color: var(--color-text-1);
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.control input {
+  height: 50px;
+}
+
+.control textarea {
+  padding: 20px;
+}
+
+.control button {
+  border: none;
+  background: linear-gradient(45deg, var(--color-purple), var(--color-orange));
+  color: var(--color-text-dark);
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.05rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.control button:hover {
+  cursor: pointer;
+}

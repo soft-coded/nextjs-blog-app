@@ -1,0 +1,14 @@
+.all-posts {
+  margin: 120px 0;
+}
+
+.header {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.all-posts a {
+  text-decoration: none;
+  color: var(--color-text-1)
+}
+
