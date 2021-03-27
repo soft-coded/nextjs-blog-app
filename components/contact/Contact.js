@@ -24,7 +24,8 @@ export default function Contact() {
 					email: emailRef.current.value
 				})
 			})
-			if (!response.ok) throw new Error("Something went wrong.")
+			console.log(response)
+			if (!response.ok) throw new Error(`${res.status}: ${res.statusText}`)
 
 			const resData = await response.json()
 			if (resData.status === "error") throw new Error(resData.message)

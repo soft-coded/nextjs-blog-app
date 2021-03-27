@@ -9,7 +9,7 @@ export default function NavigationBar() {
 	useEffect(() => {
 		document.addEventListener("scroll", () => {
 			const navbar = document.querySelector("." + styles["navbar-header"])
-			if (pageYOffset > 0) navbar.classList.add(styles["nav-scroll"])
+			if (pageYOffset > 10) navbar.classList.add(styles["nav-scroll"])
 			else navbar.classList.remove(styles["nav-scroll"])
 		})
 	}, [])
