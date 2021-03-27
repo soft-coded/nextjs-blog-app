@@ -14,10 +14,6 @@
   padding: 7px 0;
 }
 
-.nav-scroll:hover {
-  background: black;
-}
-
 .nav-scroll .logo{
   font-size: 2.5rem;
   transform: rotate(-45deg);
@@ -55,6 +51,12 @@
   transition: all 0.4s ease-in-out;
 }
 
-.logo:hover {
-  transform: rotate(135deg) scale(1.5, 1.5);
+@media (hover: hover) and (pointer: fine){
+  .logo:hover {
+    transform: rotate(135deg) scale(1.5, 1.5);
+  }
+  
+  .nav-scroll:hover {
+    background: black;
+  }
 }

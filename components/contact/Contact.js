@@ -25,7 +25,8 @@ export default function Contact() {
 				})
 			})
 			console.log(response)
-			if (!response.ok) throw new Error(`${res.status}: ${res.statusText}`)
+			if (!response.ok)
+				throw new Error(`${response.status}: ${response.statusText}`)
 
 			const resData = await response.json()
 			if (resData.status === "error") throw new Error(resData.message)
